@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1800px;
+    margin: 100px auto;
+}
+
+/* Homepage main img */
+
+/* About */
+.homepage-main-img {
+    width: 100%;
+}
+
+.number-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: bold;
+}
+
+.num-sec-number {
+    font-size: 60px;
+}
+
+.num-sec-desc {
+    font-size: 15px;
+}
+
+.intro-section {
+    margin: 40px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.paragraph {
+    text-align: justify;
+}
+
+.intro-video {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* Partners */
+
+.banner-2 {
+    z-index: 3;
+    margin-top: 300px;
+}
+
+.partners {
+    margin: 40px auto;
+}
+
+.partners-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.partner-info {
+    width: 29%;
+}
+
+.second-title {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.partner-img {
+    display: block;
+    width: 75%;
+    margin: 40px auto;
+}
+
+/* Shop area */
+.shop-btn {
+    position: absolute;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid green;
+    background-color: green;
+    bottom: px;
+    color: white;
+    font-size: 20px;
+    left: 77%;
+    transform: translate(-50%);
+    bottom: -235%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.shop-btn:hover {
+    background: orange;
+    border: 1px solid orange;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Social Media */
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    overflow: auto;
+    height: 500px;
+}
+
+#social-media {
+    display: flex;
+    justify-content: space-around;
+}

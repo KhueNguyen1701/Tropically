@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="icon" href="../main imgs/sea.png">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="./product.desc.css">
+    <style>
+        .container {
+            width: 1500px;
+        }
+
+        .item-description {
+            width: 80%;
+        }
+
+        #purchaseNowBtn {
+            height: 40px;
+            width: 150px;
+            border: 1px solid seagreen;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+            color: seagreen;
+        }
+
+        #purchaseNowBtn:hover {
+            background-color: seagreen;
+            color: white;
+        }
+    </style>
+    <title>Tropically</title>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="../index.html#navbar"><img class="navbar-brand nav-logo"
+                    src="../main imgs/homepage_pics/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link nav-about" href="../index.html#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-discover" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            DISCOVER
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item nav-shop" href="./ed.products.html">Go shop
+                                    now!
+                                </a></li>
+                            <li><a class="dropdown-item nav-event" href="#">Our events</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center me-4">
+                    <i id="greeting"></i>
+                    <div id="icon-user" style="cursor: pointer" class="mx-4">
+                        <a href="../earthday-login/earthday-login.html" class="text-dark">
+                            <i class="fa-solid fa-user fs-5"></i>
+
+                        </a>
+                    </div>
+                    <button id="logout-btn" class="btn btn-dark btn-sm mx-4 d-none">Logout</button>
+                    <div style="cursor: pointer" class="position-relative" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-cart-shopping fs-5"></i>
+                        <span id="quantity"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </div>
+                </div>
+                <form class="d-flex" role="search" placeholder="What are you looking for?">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success nav-btn" type="submit">Go PLantIt!</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Description -->
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6">
+                <img id="image" class="w-100 rounded" style="height:400px; object-fit:cover;" src="" alt="">
+            </div>
+            <div class="col-6 item-description">
+                <h2 id="name"></h2>
+                <div id="rate">
+                    <!-- <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i> -->
+                    <p></p>
+                </div>
+
+                <p id="price"></p>
+                <p id="description"></p>
+                <a href="ed.products.html" class="purchaseNowBtn">Back to shop</a>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Related Products -->
+        <div class="related-products">
+            <div class="related-product">
+                <a href="http://127.0.0.1:5500/earthday%20-%20products/product.desc.html?id=3">
+                    <p id="rel-name-1" class="rel-name">CLOUDY SUNSET LINEN PIJAMA - PINK</p>
+                </a>
+                <a href="http://127.0.0.1:5500/earthday%20-%20products/product.desc.html?id=3"><img id="rel-pic-1"
+                        class="rel-pic" src="./products-imgs/cloudy_sunset_a.png"></a>
+            </div>
+            <div class="related-product">
+                <a href="http://127.0.0.1:5500/earthday%20-%20products/product.desc.html?id=11">
+                    <p id="rel-name-2" class="rel-name">BIODEGRADABLE COTTON SWABS - CARE</p>
+                </a>
+                <a href="http://127.0.0.1:5500/earthday%20-%20products/product.desc.html?id=11"><img id="rel-pic-2"
+                        class="rel-pic" src="./products-imgs/cotton_swab_a.png"></a>
+            </div>
+            <div class="related-product">
+                <a href="http://127.0.0.1:5500/earthday%20-%20products/product.desc.html?id=7">
+                    <p id="rel-name-3" class="rel-name">PEACEFUL SEA SHORTS - NAVY</p>
+                </a>
+                <a href="http://127.0.0.1:5500/earthday%20-%20products/product.desc.html?id=11"><img id="rel-pic-3"
+                        class="rel-pic" src="./products-imgs/peaceful_sea_a.png"></a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- Footer -->
+    <div class="footer-dark plantit-footer">
+        <footer>
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item footer-item">
+                        <h3 class="footer-title">Plant It</h3>
+                        <p class="footer-text"> PlantIt features a variety of plant-based and eco-friendly items,
+                            including skincare
+                            products, household cleaners, reusable bags and water bottles, and much more.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item footer-item">
+                        <h3 class="footer-title">Plan Future</h3>
+                        <p class="footer-text">Whether you're
+                            looking for something practical, stylish, or both, Plant It is the perfect destination
+                            for
+                            anyone who wants to live a more sustainable lifestyle.</p>
+                    </div>
+                    <div class="col-md-6 item text footer-item">
+                        <h3 class="footer-title">Leave your contact here!</h3>
+                        <h6 class="font-italic footer-text">Receive our newsletter.</h6>
+                        <div id="footer-form" class="footer-form">
+                            <form action="#">
+                                <div class="input-box">
+                                    <input id="guest-name" type="text" placeholder="Name" class="footer-input">
+                                    <input id="guest-email" type="text" placeholder="Email" class="footer-input"
+                                        input-special>
+                                    <input id="message" type="text" placeholder="Message" class="footer-input">
+                                    <button class="send-btn" type="submit">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col item social">
+                        <a href="https://www.facebook.com/EarthDay.Org" target="_blank"><i
+                                class="icon ion-social-facebook"></i></a>
+                        <a href="https://twitter.com/EarthDay?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            target="_blank"><i class="icon ion-social-twitter"></i></a>
+                        <a href="https://g.co/kgs/xwxZr9" target="_blank"><i class="icon ion-social-snapchat"></i></a>
+                        <a href="https://www.instagram.com/earthdaynetwork/" target="_blank"><i
+                                class="icon ion-social-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">PlantIt © 2023</p>
+        </footer>
+
+        <script src="./product.desc.js" type="module"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            const btn = document.getElementById('purchaseNowBtn')
+            purchaseNowBtn.onclick = function () {
+                Swal.fire('This item has been added to your cart.')
+            }
+        </script>
+
+        <!-- Footer JS -->
+        <!-- <script type="module" src="../earthday.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Related Products */
+hr {
+    color: black;
+}
+
+.related-products {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin-top: 30px;
+    border: 2px solid rgb(185, 218, 185);
+    border-radius: 10px;
+}
+
+.rel-pic {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.rel-pic:hover {
+    scale: 1.1;
+}
+
+.rel-name {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rel-name:hover {
+    color: rgb(172, 221, 172);
+}
+
+.purchaseNowBtn {
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid orange;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+}
+
+.purchaseNowBtn:hover {
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+}
